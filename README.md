@@ -1,7 +1,7 @@
 # Tevin Alvord Portfolio
 
 ## Purpose
-This repository serves as a personal portfolio for Tevin Alvord. I'm excited to have this project to be able to show off who I am as a person as well as my work as I progress through my journey of becoming a full-stack developer.
+This is a repository for my personal portfolio. I'm excited to have this project to tell a bit about myself to the world as well as my work as I progress through my journey of becoming a full-stack developer.
 
 ## Built With
 * HTML
