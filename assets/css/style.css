@@ -1,7 +1,8 @@
 :root {
     --primary-color: rgb(0, 122, 204);
-    --secondary-color: ;
-    --tertiary-color: ;
+    /* --secondary-color: rgb(204, 173, 0); */
+    --secondary-color: rgb(252, 225, 56);
+    --tertiary-color: rgb(204, 0, 61);
 }
 
 * {
@@ -10,7 +11,95 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
 header h1 {
-    color: var(--primary-color);
+    /* background-color: white; */
+    padding: 16px 16px 16px 10px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+header h1 a {
+    color: var(--secondary-color);
     font-size: 40px;
+    text-decoration: none;
+    text-shadow: 4px 3px 5px black;
+
+}
+
+header nav {
+    margin: 16px 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 26px;
+    padding: 10px 15px;
+    margin: 0px 15px;
+    border-bottom: 2px solid var(--secondary-color);
+    text-shadow: -4px 3px 5px black;
+}
+
+section {
+ /* padding: 60px */
+}
+
+.hero {
+    background-image: url("../images/tevin-arms-open.jpg");
+    /* background-image: url("../images/img2.jpg"); */
+    background-size: cover;
+    background-position: center 34%;
+    padding: 200px 60px;
+    height: 400px;
+    width: 100%;
+}
+
+.hero h2 {
+    color: var(--primary-color);
+    text-align: right;
+    position: absolute;
+    top: 400px; right: 60px;
+    font-size: 32px;
+    text-shadow: -4px 3px 5px black;
+}
+
+.about-me, .work, .contact-me {
+    display: flex;
+}
+
+.title-div {
+    background-color: var(--secondary-color);
+    height: 200px;
+    width: 300px;
+}
+
+.work a {
+    text-decoration: none;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 46px;
+    border-right: 2px solid var(--primary-color);
+    text-align: right;
+    padding: 40px;
 }
