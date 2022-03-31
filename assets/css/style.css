@@ -82,6 +82,18 @@ section {
     text-shadow: -4px 3px 5px black;
 }
 
+.about-me div {
+    display: flex;
+    align-items: center;
+}
+
+.about-me div p {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 0px auto;
+    width: 80%;
+}
+
 .about-me, .work, .contact-me {
     display: flex;
 }
@@ -90,16 +102,38 @@ section {
     background-color: var(--secondary-color);
     height: 200px;
     width: 300px;
+    display: flex;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .work a {
     text-decoration: none;
+    color: var(--primary-color);
+    /* margin: 0px auto;
+    width: 80%; */
 }
 
 .section-title {
+    justify-content: center;
     color: var(--primary-color);
     font-size: 46px;
-    border-right: 2px solid var(--primary-color);
+    border-right: 3px solid var(--primary-color);
     text-align: right;
-    padding: 40px;
+    padding: 60px;
+    margin: 20px 20px 20px 0px;
+    text-align: center;
+}
+
+footer ul li {
+    font-size: 20px;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
