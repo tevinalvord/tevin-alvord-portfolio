@@ -85,7 +85,7 @@ section {
     position: absolute;
     top: 400px; right: 60px;
     font-size: 32px;
-    text-shadow: 3px 3px 3px var(--secondary-color);
+    text-shadow: 2px 2px 2px var(--secondary-color);
 }
 
 .about-me-p-div {
@@ -100,7 +100,7 @@ section {
     max-width: 75ch;
 }
 
-.about-me, .work, .contact-me {
+.about-me, .contact-me {
     display: flex;
 }
 
@@ -112,28 +112,35 @@ section {
     justify-content: flex-end;
 }
 
-.work a {
-    text-decoration: none;
-    color: var(--primary-color);
-    margin: 0px auto;
-    width: 80%;
-}
-
 .work-div {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 60px 0px;
+    gap: em;
 }
 
 .main-project {
     border: 4px solid var(--primary-color);
     position: relative;
+    margin: 20px 0px;
 }
 
 .main-project div {
     position: absolute;
     top: 70%;
+}
+
+.other-projects {
+    border: 4px solid var(--primary-color);
+    position: relative;
+    margin: 20px 0px;
+}
+
+.other-projects div {
+    position: absolute;
+    top: 50%;
 }
 
 .main-project img {
@@ -143,8 +150,14 @@ section {
     display: block;
 }
 
+.other-projects img {
+    height: 150px;
+    filter: grayscale(100);
+    transition: 500ms ease-in-out;
+    display: block;
+}
+
 img:hover {
-    height: 300px;
     filter: grayscale(0);
 }
 
